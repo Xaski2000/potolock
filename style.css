@@ -64,3 +64,10 @@ html {
 	height: auto;
 	color: gray;
 }
+
+.light {
+	position: absolute;
+	z-index: 5;
+	width: 100%;
+	height: auto;
+}
