@@ -64,8 +64,8 @@ html {
 }
 
 .light {
-	position: absolute;
 	z-index: 5;
+	position: absolute;
 	width: 100%;
 	height: auto;
 }
