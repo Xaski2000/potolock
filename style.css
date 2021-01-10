@@ -1,73 +1,84 @@
 body,
 html {
-	margin: 0;
-	padding: 0;
-	height: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 *,
 *:before,
 *:after {
-	box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .wrapper {
-	height: 693px;
-	width: 1145px;
-	background-color: aqua;
-	margin: 7% auto 0;
+  height: 693px;
+  width: 1145px;
+  background-color: aqua;
+  margin: 7% auto 0;
 }
 
 #container {
-	height: 100%;
-	width: 100%;
+  height: 100%;
+  width: 100%;
 }
 
 #product-svg {
-	position: absolute;
-	z-index: 3;
-	background-size: 100%;
-	background-repeat: no-repeat;
-	background-position: 50%;
-	mix-blend-mode: multiply;
-	margin: 0;
-	padding: 0;
+  position: absolute;
+  z-index: 3;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  mix-blend-mode: multiply;
+  margin: 0;
+  padding: 0;
 }
 
 #product-shape {
-	fill: #DBED64;
-}
-
-
-.jscolor {
-	position: fixed;
-	bottom: 4em;
-	right: 4em;
-	z-index: 3;
-	padding: 1em;
-	box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5);
-	border: 0;
-	border-radius: 5px;
-	cursor: pointer;
-}
-
-.background-image {
-	width: 100%;
-	height: 100%;
-	margin: 0;
+  fill: #DBED64;
 }
 
 .product-svg-bg {
-	z-index: 2;
-	position: absolute;
-	width: auto;
-	height: auto;
+  z-index: 2;
+  position: absolute;
+  width: auto;
+  height: auto;
+}
+
+.background-image {
+  width: 100%;
+  height: 100%;
+  margin: 0;
 }
 
 .light {
-	z-index: 100;
-	position: absolute;
-	top: 0;
-	width: 100%;
-	height: auto;
+  z-index: 100;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
 }
+
+.menu {
+  width: 1145px;
+  height: 100px;
+  background-color: #eee;
+  margin: 0 auto 0;
+}
+
+.menu .jscolor {
+  /* position: fixed; */
+  bottom: 4em;
+  right: 4em;
+  z-index: 3;
+  padding: 1em;
+  /* box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.5); */
+  border: 1;
+  /* border-radius: 5px; */
+  cursor: pointer;
+}
+
+.menu__light-button {
+  margin: 0;
+}
+/*# sourceMappingURL=style.css.map */

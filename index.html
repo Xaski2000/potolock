@@ -38,10 +38,19 @@
 
 			<img id="background-image" class="background-image" src="img/3-4.jpg" alt="">
 
-			<img class="light" src="/img/lighwerwerwerwert.png">
+			<img class="light" src="/img/lighwerwerwerwert.png" alt="">
 		</div>
-		<input class="jscolor {onFineChange:'changeColor(this)'}" value="DBED64">
+
 	</div>
+
+	<div class="menu">
+		<label for="color-box">Цвет потолка</label>
+		<input class="jscolor {onFineChange:'changeColor(this)'}" name="color-box" value="DBED64">
+
+		<label for="light-box">Светильники</label>
+		<input class="menu__light-button" type="checkbox" name="light-box">
+	</div>
+
 	<script src="jscolor.js"></script>
 	<script src="script.js"></script>
 </body>
