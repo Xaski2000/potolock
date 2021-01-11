@@ -5,7 +5,9 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Потолки</title>
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="./css/style.css">
+	<link rel='stylesheet' href="./css/spectrum.css">
+
 </head>
 
 <body>
@@ -36,24 +38,29 @@
 				<path id="product-shape" class="st0" d="M0,0v175l690,139l455-78V0H0z" />
 			</svg>
 
-			<img id="background-image" class="background-image" src="img/3-4.jpg" alt="">
+			<img id="background-image" class="background-image" src="./img/3-4.jpg" alt="">
 
-			<img class="light" src="img/lighwerwerwerwert.png"
+			<img id="light" class="light" src="./img/lighwerwerwerwert.png"
 				alt="Светильники">
 		</div>
 
 	</div>
 
 	<div class="menu">
-		<label for="color-box">Цвет потолка</label>
-		<input class="jscolor {onFineChange:'changeColor(this)'}" name="color-box" value="DBED64">
+		<!-- <label for="color-box">Цвет потолка</label>
+		<input class="jscolor {onFineChange:'changeColor(this)'}" name="color-box" value="DBED64"> -->
+
+		<input type="text" class="spectrum_color" id="color_picker">
 
 		<label for="light-box">Светильники</label>
-		<input class="menu__light-button" type="checkbox" name="light-box">
+		<input id="checkbox_light" class="menu__light-button" type="checkbox" name="light-box">
 	</div>
 
-	<script src="jscolor.js"></script>
-	<script src="script.js"></script>
+
+
+	<script src="./js/jquery-3.5.1.js"></script>
+	<script src="./js/spectrum.js"></script>
+	<script src="./js/script.js"></script>
 </body>
 
 </html>

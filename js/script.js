@@ -1,12 +1,22 @@
-// Reference the color shape that was drawn over the image
-const overlay = document.getElementById("product-shape");
+$("#color_picker").spectrum ({
+	palette: [],
+	showPalette: true,
+	maxSelectionSize: 20,
+	showInitial: true,
+	color: "#fff",
+	move: function(color) {
+		let a = $("#color_picker").spectrum('get').toHexString();
+		document.getElementById("product-shape").style.fill = a;
+   }
+});
 
-function changeColor(picker) {
-	// Set the fill style
-	overlay.style.fill = picker.toHEXString();
-}
-
-// Thats it!
+$('#checkbox_light').on('click', function () {
+	if ( $(this).is(':checked') ) {
+		document.getElementById("light").style.display = "inline-block";
+	} else {
+		document.getElementById("light").style.display = "none";
+	}
+})
 
 // BONUS
 
