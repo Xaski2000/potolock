@@ -4,53 +4,27 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Потолки</title>
+	<title>Document</title>
+	<!-- <link rel="stylesheet" href="./css/spectrum.css"> -->
 	<link rel="stylesheet" href="./css/style.css">
-	<link rel='stylesheet' href="./css/spectrum.css">
-
+	<link rel="stylesheet" href="./css/spectrum-new.css">
 </head>
 
 <body>
 	<div class="wrapper">
-		<div id="container">
-			<svg class="product-svg-bg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-				xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1145 693"
-				style="enable-background:new 0 0 1145 693;" xml:space="preserve">
-				<style type="text/css">
-					.st0 {
-						fill: url(#SVGID_1_);
-					}
-				</style>
-				<radialGradient id="SVGID_1_" cx="593.5" cy="305" r="299.767" fx="883.0637" fy="227.4554"
-					gradientTransform="matrix(-8.173952e-02 0.9967 -2.0989 -0.1721 1282.1729 -234.0119)"
-					gradientUnits="userSpaceOnUse">
-					<stop offset="0.491" style="stop-color:#A3A3A3" />
-					<stop offset="0.6493" style="stop-color:#838383" />
-					<stop offset="0.8518" style="stop-color:#5F5F5F" />
-					<stop offset="0.96" style="stop-color:#515151" />
-				</radialGradient>
-				<path class="st0" d="M0,0v175l690,139l455-78V0H0z" />
-			</svg>
+		<img src="./new img/room-1.png" alt="Комната" class="bg">
+		<img src="./new img/color-bg.png" alt="Подложка" class="color-bg">
 
-			<svg id="product-svg" version="1.1" xmlns="http://www.w3.org/2000/svg"
-				xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 1145 693"
-				style="enable-background:new 0 0 1145 693;" xml:space="preserve">
-				<path id="product-shape" class="st0" d="M0,0v175l690,139l455-78V0H0z" />
-			</svg>
-
-			<img id="background-image" class="background-image" src="./img/3-4.jpg" alt="">
-
-			<img id="light" class="light" src="./img/lighwerwerwerwert.png"
-				alt="Светильники">
-		</div>
-
+		<svg id="color" class="color"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" xml:space="preserve" style="enable-background:new 0 0 1200 800;">
+			<path id="color_layer-path" class="color_layer-path" d="M36.79-.06l202.1,161.21H995.6L1200,10.38V-.06Z" />
+		</svg>
+		<img id="light" src="./new img/light.png" alt="Светильники" class="light">
 	</div>
 
 	<div class="menu">
-		<!-- <label for="color-box">Цвет потолка</label>
-		<input class="jscolor {onFineChange:'changeColor(this)'}" name="color-box" value="DBED64"> -->
 
-		<input type="text" class="spectrum_color" id="color_picker">
+		<!-- <input type="text" class="spectrum_color" id="color_picker"> -->
+		<input id="color-picker" value='#276cb8' />
 
 		<label for="light-box">Светильники</label>
 		<input id="checkbox_light" class="menu__light-button" type="checkbox" name="light-box">
@@ -59,8 +33,10 @@
 
 
 	<script src="./js/jquery-3.5.1.js"></script>
-	<script src="./js/spectrum.js"></script>
+	<script src="./js/spectrum-new.js"></script>
+	<!-- <script src="./js/spectrum.js"></script> -->
 	<script src="./js/script.js"></script>
+
 </body>
 
 </html>
