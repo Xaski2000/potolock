@@ -2,7 +2,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	let mySwiper = new Swiper('.slider-block', {
 		slidesPerView: 1,
-	})
+		grabCursor: false,
+	});
 
 	const maxItems = 5;
 	const sliderNavItems = document.querySelectorAll('.slider-nav__item');
@@ -13,14 +14,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
 		el.addEventListener('click', (e) => {
 			const index = parseInt(e.currentTarget.dataset.index);
-			console.log(index)
+			console.log(index);
 			mySwiper.slideTo(index);
 		});
 	});
 
 	const showMore = () => {
 		let childenLength = sliderNav.children.length;
-		console.log(childenLength)
+		console.log(childenLength);
 		if (childenLength > maxItems) {
 			sliderNav.insertAdjacentHTML('beforeend', `
 				<div class="btn-center">

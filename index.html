@@ -6,8 +6,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Potolock</title>
 	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-	<link rel="stylesheet" href="./css/spectrum.css">
 	<link rel="stylesheet" href="./css/slider.css">
+	<link rel="stylesheet" href="./css/spectrum.css">
 	<link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -48,11 +48,11 @@
 		</div>
 
 		<div class="menu">
-
-			<input id="color-picker" value='#276cb8' />
+			<label for="color">Выбор цвета</label>
+			<input id="color-picker" name="color" value='#276cb8' />
 
 			<label for="light-box">Светильники</label>
-			<input id="checkbox_light" class="menu__light-button" type="checkbox" name="light-box">
+			<input id="checkbox_light" class="menu__light-button" type="checkbox" autocomplete="off" name="light-box">
 		</div>
 	</div>
 
@@ -60,8 +60,8 @@
 
 	<script src="./js/jquery-3.5.1.js"></script>
 	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-	<script src="./js/spectrum.js"></script>
 	<script src="./js/slider.js"></script>
+	<script src="./js/spectrum.js"></script>
 	<script src="./js/script.js"></script>
 
 </body>

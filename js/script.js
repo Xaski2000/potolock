@@ -15,6 +15,7 @@ $('#color-picker').spectrum({
 	move: function(color) {
 				let a = color.toHexString();
 				document.getElementById("color_layer-path").style.fill = a;
+				document.getElementsByClassName('sp-original-input-container')[0].style.borderColor = a;
 			}
 });
 
