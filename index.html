@@ -5,33 +5,63 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Potolock</title>
-	<link rel="stylesheet" href="./css/style.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
 	<link rel="stylesheet" href="./css/spectrum.css">
+	<link rel="stylesheet" href="./css/slider.css">
+	<link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-	<div class="wrapper">
-		<img src="./new img/room-1.png" alt="Комната" class="bg">
-		<img src="./new img/color-bg.png" alt="Подложка" class="color-bg">
+	<div class="container">
+		<div class="wrapper">
+			<div class="card-slider__nav slider-nav">
+				<div class="slider-nav__item" tabindex="0"><img src="./new img/room-1.png" alt=""></div>
+				<div class="slider-nav__item" tabindex="0"><img src="./new img/room-1.png" alt=""></div>
+				<div class="slider-nav__item" tabindex="0"><img src="./new img/room-1.png" alt=""></div>
+				<div class="slider-nav__item" tabindex="0"><img src="./new img/room-1.png" alt=""></div>
+			</div>
+			<div class="card-slider__block slider-block">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img src="./new img/room-1.png" alt="Комната" class="bg">
+						<img src="./new img/color-bg.png" alt="Подложка" class="color-bg">
 
-		<svg id="color" class="color"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" xml:space="preserve" style="enable-background:new 0 0 1200 800;">
-			<path id="color_layer-path" class="color_layer-path" d="M36.79-.06l202.1,161.21H995.6L1200,10.38V-.06Z" />
-		</svg>
-		<img id="light" src="./new img/light.png" alt="Светильники" class="light">
-	</div>
+						<svg id="color" class="color" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"
+							xml:space="preserve" style="enable-background:new 0 0 1200 800;">
+							<path id="color_layer-path" class="color_layer-path"
+								d="M36.79-.06l202.1,161.21H995.6L1200,10.38V-.06Z" />
+						</svg>
+						<img id="light" src="./new img/light.png" alt="Светильники" class="light">
+					</div>
+					<div class="swiper-slide">
+						<img src="./new img/room-1.png" alt="">
+					</div>
+					<div class="swiper-slide">
+						<img src="./new img/room-1.png" alt="">
+					</div>
+					<div class="swiper-slide">
+						<img src="./new img/room-1.png" alt="">
+					</div>
+				</div>
+			</div>
 
-	<div class="menu">
+		</div>
 
-		<input id="color-picker" value='#276cb8' />
+		<div class="menu">
 
-		<label for="light-box">Светильники</label>
-		<input id="checkbox_light" class="menu__light-button" type="checkbox" name="light-box">
+			<input id="color-picker" value='#276cb8' />
+
+			<label for="light-box">Светильники</label>
+			<input id="checkbox_light" class="menu__light-button" type="checkbox" name="light-box">
+		</div>
 	</div>
 
 
 
 	<script src="./js/jquery-3.5.1.js"></script>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 	<script src="./js/spectrum.js"></script>
+	<script src="./js/slider.js"></script>
 	<script src="./js/script.js"></script>
 
 </body>

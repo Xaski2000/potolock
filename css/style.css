@@ -11,11 +11,16 @@ html {
 	box-sizing: border-box;
 }
 
+.container {
+	margin: 50px auto auto 100px;
+}
+
 .wrapper {
-	width: 1200px;
+	width: 1320px;
 	height: 800px;
 	background-color: #eee;
 	position: relative;
+	display: flex;
 }
 .bg {
 	width: 100%;
@@ -57,5 +62,5 @@ html {
 .menu {
 	z-index: 100;
 	width: 1200px;
-	height: 200px;
+	height: 50px;
 }
