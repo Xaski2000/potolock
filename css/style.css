@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700;900&display=swap');
+
 body,
 html {
 	margin: 0;
@@ -18,7 +20,7 @@ html {
 .wrapper {
 	width: 1320px;
 	height: 800px;
-	background-color: #eee;
+	/* background-color: #eee; */
 	position: relative;
 	display: flex;
 }
@@ -63,4 +65,12 @@ html {
 	z-index: 100;
 	width: 1200px;
 	height: 50px;
+}
+
+.input-text {
+	font-family: Roboto, sans-serif;
+}
+
+.checkbox_light-label {
+	margin-left: 20px;
 }
