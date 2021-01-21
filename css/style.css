@@ -18,11 +18,12 @@ html {
 }
 
 .wrapper {
-	width: 1320px;
+	max-width: 1320px;
 	height: 800px;
 	/* background-color: #eee; */
 	position: relative;
 	display: flex;
+	/* padding-top: 60.6%; */
 }
 .bg {
 	width: 100%;
@@ -48,7 +49,7 @@ html {
 }
 
 .color_layer-path {
-	fill: #eee;
+	fill: #45ff11;
 }
 
 .light {

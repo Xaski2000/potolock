@@ -295,7 +295,7 @@ Here are the basic themeable display options (colors, fonts, global widths)
 .sp-container {
     display: inline-flex;
     border-radius: 0;
-    background-color: white;
+    background-color: #eee;
     padding: 0;
     border-radius: 4px;
     color: black;

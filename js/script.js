@@ -14,15 +14,18 @@ $('#color-picker').spectrum({
 	color: "#ffffff",
 	move: function(color) {
 				let a = color.toHexString();
-				document.getElementById("color_layer-path").style.fill = a;
+				// document.getElementsByClassName("color_layer-path").style.fill = a;
+				$(".color_layer-path").css("fill", a);
 				document.getElementsByClassName('sp-original-input-container')[0].style.borderColor = a;
 			}
 });
 
 $('#checkbox_light').on('click', function () {
 	if ( $(this).is(':checked') ) {
-		document.getElementById("light").style.display = "inline-block";
+		$(".light").css("display", "inline-block");
+		// document.getElementById("light").style.display = "inline-block";
 	} else {
-		document.getElementById("light").style.display = "none";
+		$(".light").css("display", "none");
+		// document.getElementById("light").style.display = "none";
 	}
 });
