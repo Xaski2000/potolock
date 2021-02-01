@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800.13">
+  <defs>
+    <style>
+      .cls-1 {
+        isolation: isolate;
+      }
+
+      .cls-2 {
+        fill: #ce3c3c;
+        fill-opacity: 0;
+      }
+
+      .cls-3 {
+        fill: #009432;
+        mix-blend-mode: multiply;
+      }
+    </style>
+  </defs>
+  <title>wall</title>
+  <g class="cls-1">
+    <g id="Layer_1" data-name="Layer 1">
+      <rect class="cls-2" width="1200" height="800.13"/>
+      <path class="cls-3" d="M0,740.59l31.92-15.68L41.07,89h6.06l165,107.05-3.57,442.69,25.67-11L967.71,627s4.64-25.75,34.93-23.26,36.81,24.33,35,41.44L1200,717.9V10.38L995.6,161.15H238.89L36.79-.06,0,0Z" transform="translate(0 0.06)"/>
+    </g>
+  </g>
+</svg>
