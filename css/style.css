@@ -13,35 +13,40 @@ html {
 	box-sizing: border-box;
 }
 
-
+/* .container {
+	margin: 50px auto auto 100px;
+	max-width: 1200px;
+	max-height: 800px;
+	background-color: #eee;
+} */
 
 .wrapper {
 	margin: 50px auto auto 100px;
-	width: 1200px;
-	height: 800px;
-	/* background-color: #eee; */
+	max-width: 1200px;
+	max-height: 800px;
+	/* height: calc(var(--size) / 1.5); */
+	/* max-width: 1200px;
+	height: 800px; */
 	position: relative;
-	display: flex;
 	background-color: #777;
-	/* padding-top: 60.6%; */
 }
+
 .bg {
 	width: 100%;
-	height: auto;
 	position: absolute;
 	object-fit: cover;
 	z-index: 2;
 }
+
 .color-bg {
 	width: 100%;
-	height: auto;
 	position: absolute;
 	object-fit: cover;
 	z-index: 3;
 }
+
 .color {
 	width: 100%;
-	height: auto;
 	position: absolute;
 	object-fit: cover;
 	mix-blend-mode: multiply;
@@ -54,20 +59,44 @@ html {
 
 .wall {
 	width: 100%;
-	height: auto;
 	position: absolute;
 	object-fit: cover;
 	mix-blend-mode: multiply;
 	z-index: 5;
 }
 
-.wall-path{
+.wall-path {
 	fill: aqua;
+}
+
+.cover {
+	width: 100%;
+	position: absolute;
+	object-fit: cover;
+	z-index: 4;
+}
+
+.cover-color {
+	width: 100%;
+	position: absolute;
+	object-fit: cover;
+	mix-blend-mode: multiply;
+	z-index: 5;
+}
+
+.cover-color-path {
+	fill: turquoise;
+}
+
+.furniture {
+	width: 100%;
+	position: absolute;
+	object-fit: cover;
+	z-index: 20;
 }
 
 .light {
 	width: 100%;
-	height: auto;
 	position: absolute;
 	object-fit: cover;
 	z-index: 5;
@@ -77,11 +106,29 @@ html {
 
 .menu {
 	z-index: 100;
-	width: 1200px;
+	width: 1250px;
 	height: 50px;
 	background-color: #999;
 	position: relative;
 	margin-left: 100px;
+}
+
+.light-button {
+	width: 100px;
+	height: 50px;
+	background-color: #773388;
+	border: none;
+	border-style: none;
+	padding: 0;
+}
+
+.light-button:active {
+	background-color: #337788;
+}
+
+.light-button p {
+	font-family: Roboto, sans-serif;
+	color: white;
 }
 
 .input-text {
