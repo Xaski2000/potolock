@@ -23,12 +23,13 @@ html {
 .wrapper {
 	margin: 50px auto auto 100px;
 	max-width: 1200px;
-	max-height: 800px;
+	height: 800px;
 	/* height: calc(var(--size) / 1.5); */
 	/* max-width: 1200px;
 	height: 800px; */
 	position: relative;
 	background-color: #777;
+
 }
 
 .bg {
@@ -74,6 +75,7 @@ html {
 	position: absolute;
 	object-fit: cover;
 	z-index: 4;
+	display: none;
 }
 
 .cover-color {
@@ -82,6 +84,7 @@ html {
 	object-fit: cover;
 	mix-blend-mode: multiply;
 	z-index: 5;
+	display: none;
 }
 
 .cover-color-path {
@@ -92,10 +95,11 @@ html {
 	width: 100%;
 	position: absolute;
 	object-fit: cover;
-	z-index: 20;
+	z-index: 6;
+	display: none;
 }
 
-.light {
+.light-dots {
 	width: 100%;
 	position: absolute;
 	object-fit: cover;
@@ -104,29 +108,38 @@ html {
 	display: none;
 }
 
+.light {
+	width: 100%;
+	position: absolute;
+	object-fit: cover;
+	z-index: 5;
+	margin: 0;
+}
+
 .menu {
 	z-index: 100;
-	width: 1250px;
+	width: 1200px;
 	height: 50px;
 	background-color: #999;
 	position: relative;
 	margin-left: 100px;
 }
 
-.light-button {
+.button {
 	width: 100px;
 	height: 50px;
 	background-color: #773388;
-	border: none;
-	border-style: none;
+	box-shadow: none;
+	border: 2px solid black;
 	padding: 0;
+
 }
 
-.light-button:active {
+.button:active {
 	background-color: #337788;
 }
 
-.light-button p {
+.button p {
 	font-family: Roboto, sans-serif;
 	color: white;
 }

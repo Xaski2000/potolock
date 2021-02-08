@@ -94,12 +94,30 @@ $('#color-picker-for-cover').spectrum({
 // observer.observe(target, config);
 
 
-$('#light-button').on('click', function () {
-	if ($(".light").css("display") == 'none') {
-		$(".light").css("display", "inline-block");
-		// document.getElementById("light").style.display = "inline-block";
+$('#light-dots-button').on('click', function () {
+	if ($(".light-dots").css("display") == 'none') {
+		$(".light-dots").css("display", "inline-block");
+		$(".light-dots-button").css("background-color", "#337788");
 	} else {
-		$(".light").css("display", "none");
-		// document.getElementById("light").style.display = "none";
+		$(".light-dots").css("display", "none");
+		$(".light-dots-button").css("background-color", "#773388");
+	}
+});
+
+$('#furniture-button').on('click', function () {
+	if ($(".furniture").css("display") == 'none') {
+		$(".furniture").css("display", "inline-block");
+	} else {
+		$(".furniture").css("display", "none");
+	}
+});
+
+$('#cover-button').on('click', function () {
+	if ($(".cover").css("display") == 'none') {
+		$(".cover").css("display", "inline-block");
+		$(".cover-color").css("display", "inline-block");
+	} else {
+		$(".cover").css("display", "none");
+		$(".cover-color").css("display", "none");
 	}
 });
