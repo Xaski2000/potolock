@@ -117,8 +117,10 @@ $('#light-button').on('click', function () {
 $('#furniture-button').on('click', function () {
 	if ($(".furniture").css("display") == 'none') {
 		$(".furniture").css("display", "inline-block");
+		$(".furniture-button").css("background-color", "#337788");
 	} else {
 		$(".furniture").css("display", "none");
+		$(".furniture-button").css("background-color", "#773388");
 	}
 });
 
@@ -126,8 +128,22 @@ $('#cover-button').on('click', function () {
 	if ($(".cover").css("display") == 'none') {
 		$(".cover").css("display", "inline-block");
 		$(".cover-color").css("display", "inline-block");
+		$(".cover-button").css("background-color", "#337788");
 	} else {
 		$(".cover").css("display", "none");
 		$(".cover-color").css("display", "none");
+		$(".cover-button").css("background-color", "#773388");
+	}
+});
+
+$('#radio-button').on('click', function () {
+	if ($(".radio").css("display") == 'none') {
+		$(".radio").css("display", "inline-block");
+		$(".radio-color").css("display", "inline-block");
+		$(".radio-button").css("background-color", "#337788");
+	} else {
+		$(".radio").css("display", "none");
+		$(".radio-color").css("display", "none");
+		$(".radio-button").css("background-color", "#773388");
 	}
 });

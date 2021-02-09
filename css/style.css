@@ -123,6 +123,7 @@ html {
 	object-fit: cover;
 	z-index: 5;
 	margin: 0;
+	display: none;
 }
 
 .menu {
