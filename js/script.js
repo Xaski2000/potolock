@@ -104,6 +104,16 @@ $('#light-dots-button').on('click', function () {
 	}
 });
 
+$('#light-button').on('click', function () {
+	if ($(".light").css("display") == 'none') {
+		$(".light").css("display", "inline-block");
+		$(".light-button").css("background-color", "#337788");
+	} else {
+		$(".light").css("display", "none");
+		$(".light-button").css("background-color", "#773388");
+	}
+});
+
 $('#furniture-button').on('click', function () {
 	if ($(".furniture").css("display") == 'none') {
 		$(".furniture").css("display", "inline-block");

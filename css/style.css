@@ -114,6 +114,15 @@ html {
 	object-fit: cover;
 	z-index: 5;
 	margin: 0;
+	display: none;
+}
+
+.radio {
+	width: 100%;
+	position: absolute;
+	object-fit: cover;
+	z-index: 5;
+	margin: 0;
 }
 
 .menu {
@@ -131,6 +140,7 @@ html {
 	background-color: #773388;
 	box-shadow: none;
 	border: 2px solid black;
+	border: none;
 	padding: 0;
 
 }
