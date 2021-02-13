@@ -33,11 +33,6 @@ html {
 	content: '';
 	display: block;
 	padding-top: 66.666%;
-	/*установите ваши пропорции, в данном случае квадрат*/
-	width: 0px;
-	/*ширина только для наглядности - УДАЛИТЕ*/
-	background: #f00;
-	/*фон только для наглядности - УДАЛИТЕ*/
 }
 
 .img-shape {
@@ -184,12 +179,6 @@ html {
 	font-size: 16px;
 }
 
-/* .color-picker-for-cover-box:hover ~ .cover-button {
-	border: 2px solid #ff3359;
-	background-color: #ff3359;
-} */
-
 .cover-button {
-	/* border: 2px solid #ff3359; */
 	transition: all 0.3s;
 }
