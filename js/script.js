@@ -9,7 +9,7 @@ $('#color-picker').spectrum({
 	maxSelectionSize: 22,
 	color: "#ffffff",
 	showInitial: true,
-   showInput: true,
+	showInput: true,
 	showButtons: false,
 	move: function (color) {
 		let a = color.toHexString();
@@ -32,7 +32,7 @@ $('#color-picker-for-wall').spectrum({
 	chooseText: "Выбрать",
 	color: "#ffffff",
 	showInitial: true,
-   showInput: true,
+	showInput: true,
 	showButtons: false,
 	move: function (color) {
 		let a = color.toHexString();
@@ -55,7 +55,7 @@ $('#color-picker-for-cover').spectrum({
 	chooseText: "Выбрать",
 	color: "#ffffff",
 	showInitial: true,
-   showInput: true,
+	showInput: true,
 	showButtons: false,
 	disabled: true,
 	move: function (color) {
@@ -68,13 +68,13 @@ $('#color-picker-for-cover').spectrum({
 
 $('#color-picker-for-cover').on('mouseover', function () {
 	if ($(".cover").css("display") == 'none') {
-		$('.cover-button').css('background-color', '#ff3359')
+		$('.cover-button').css('background-color', '#ff3359');
 	}
 });
 
 $('#color-picker-for-cover').on('mouseout', function () {
 	if ($(".cover").css("display") == 'none') {
-		$('.cover-button').css('background-color', '#999')
+		$('.cover-button').css('background-color', '#999');
 	}
 });
 
@@ -114,8 +114,8 @@ $('#light-button').on('click', function () {
 });
 
 $('#furniture-button').on('click', function () {
-if ($(".furniture").css("display") == 'none') {
-	$(".furniture").css("display", "inline-block");
+	if ($(".furniture").css("display") == 'none') {
+		$(".furniture").css("display", "inline-block");
 		$(".furniture-button").css("background-color", "#bbb");
 	} else {
 		$(".furniture").css("display", "none");
@@ -136,31 +136,29 @@ $('#radio-button').on('click', function () {
 });
 
 
-	// let width = $(".wrapper").css('width');
-	// console.log(width);
+// Выбираем целевой элемент
+var target = document.getElementById('wrapper');
 
+// Конфигурация observer (за какими изменениями наблюдать)
+const config = {
+	attributes: true,
+	childList: true,
+	subtree: true
+};
 
+// Функция обратного вызова при срабатывании мутации
+const callback = function (mutationsList, observer) {
+	for (let mutation of mutationsList) {
+		if (mutation.type === 'childList') {
+			console.log('A child node has been added or removed.');
+		} else if (mutation.type === 'attributes') {
+			console.log('The ' + mutation.attributeName + ' attribute was modified.');
+		}
+	}
+};
 
-	// var target = document.getElementById('wrapper');
+// Создаем экземпляр наблюдателя с указанной функцией обратного вызова
+const observer = new MutationObserver(callback);
 
-	// // Конфигурация observer (за какими изменениями наблюдать)
-	// const config = {
-	// 	attributes: true,
-	// 	childList: true,
-	// 	subtree: true
-	// };
-
-	// // Функция обратного вызова при срабатывании мутации
-	// const callback = function (mutationsList, observer) {
-	// 	for (let mutation of mutationsList) {
-	// 		if (mutation.type === 'attributes') {
-	// 			console.log('The ' + mutation.attributeName + ' attribute was modified.');
-	// 		}
-	// 	}
-	// };
-
-	// // Создаем экземпляр наблюдателя с указанной функцией обратного вызова
-	// const observer = new MutationObserver(callback);
-
-	// // Начинаем наблюдение за настроенными изменениями целевого элемента
-	// observer.observe(target, config);
+// Начинаем наблюдение за настроенными изменениями целевого элемента
+observer.observe(target, config);

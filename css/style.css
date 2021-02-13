@@ -24,12 +24,20 @@ html {
 .wrapper {
 	margin: 20px auto auto auto;
 	max-width: 1050px;
-	height: 700px;
-	/* height: calc(var(--size) / 1.5); */
-	/* max-width: 1200px;
-	height: 800px; */
+	height: auto;
 	position: relative;
 	background-color: #777;
+}
+
+.wrapper::after {
+	content: '';
+	display: block;
+	padding-top: 66.666%;
+	/*установите ваши пропорции, в данном случае квадрат*/
+	width: 0px;
+	/*ширина только для наглядности - УДАЛИТЕ*/
+	background: #f00;
+	/*фон только для наглядности - УДАЛИТЕ*/
 }
 
 .img-shape {
