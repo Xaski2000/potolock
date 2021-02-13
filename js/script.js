@@ -66,9 +66,15 @@ $('#color-picker-for-cover').spectrum({
 	}
 });
 
-$('#color-picker-for-cover').on('click', function () {
+$('#color-picker-for-cover').on('mouseover', function () {
 	if ($(".cover").css("display") == 'none') {
-		
+		$('.cover-button').css('background-color', '#ff3359')
+	}
+});
+
+$('#color-picker-for-cover').on('mouseout', function () {
+	if ($(".cover").css("display") == 'none') {
+		$('.cover-button').css('background-color', '#999')
 	}
 });
 
