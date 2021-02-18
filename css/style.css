@@ -5,6 +5,7 @@ html {
 	margin: 0;
 	padding: 0;
 	scroll-behavior: smooth;
+	background-color: #ddd;
 }
 
 *,
@@ -69,7 +70,7 @@ html {
 }
 
 .color_layer-path {
-	fill: #45ff11;
+	fill: #FFCC66;
 }
 
 .wall {
@@ -81,7 +82,7 @@ html {
 }
 
 .wall-path {
-	fill: aqua;
+	fill: #6666CC;
 }
 
 .cover {
@@ -102,7 +103,7 @@ html {
 }
 
 .cover-color-path {
-	fill: turquoise;
+	fill: #9999FF;
 }
 
 .furniture {
@@ -144,7 +145,6 @@ html {
 	z-index: 100;
 	max-width: 1050px;
 	min-height: 110px;
-	background-color: #fff;
 	position: relative;
 	margin: 5px auto 0px auto;
 	display: flex;
@@ -154,13 +154,14 @@ html {
 .menu-item {
 	width: 250px;
 	height: 50px;
-	background-color: #999;
+	background-color: #9999FF;
 	box-shadow: none;
 	border: none;
 	padding: 0;
 	display: inline-block;
 	margin: 5px auto;
 	transition: all 0.2s;
+	border-radius: 4px;
 }
 
 .menu-item:hover {
@@ -168,7 +169,7 @@ html {
 }
 
 .menu-item:active {
-	background-color: #bbb;
+	background-color: #6666FF;
 }
 
 .menu-item p {
@@ -177,8 +178,79 @@ html {
 	font-weight: 500;
 	text-align: center;
 	font-size: 16px;
+	margin: auto;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+.cover-box {
+	width: 250px;
+	height: 50px;
+	box-shadow: none;
+	border: none;
+	padding: 0;
+	display: inline-flex;
+	margin: 5px auto;
+	transition: all 0.2s;
+	border-radius: 4px;
+}
+
+.color-button {
+	background-color: #FFCC44;
+}
+
+.color-button:active {
+	background-color: #fac20a;
 }
 
 .cover-button {
 	transition: all 0.3s;
+	margin:0 auto auto 0;
+	border-radius: 0px 4px 4px 0px;
+	display: flex;
+	width: 100px;
+}
+
+.cover-button p {
+	margin: auto;
+}
+
+.color-picker-for-cover-box {
+	display: flex;
+	margin:0 0 auto auto;
+	border-radius: 4px 0px 0px 4px;
+	width: 150px;
+}
+
+.color-picker-for-cover-box p {
+	margin-right: 7px;
+}
+
+.icon-box {
+	display: flex;
+	position: relative;
+	width: 20px;
+	height: 20px;
+	margin: auto auto auto 0;
+	justify-content: space-between;
+}
+
+.x-icon {
+	width: 100%;
+	height: 100%;
+	margin: auto auto auto 0px;
+	transition: all 0.3s;
+	position: absolute;
+}
+
+.checked-icon {
+	width: 100%;
+	height: 100%;
+	margin: auto auto auto 0px;
+	opacity: 0;
+	fill: #009933;
+	transition: all 0.3s;
+	position: absolute;
 }
