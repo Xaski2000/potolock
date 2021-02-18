@@ -171,7 +171,7 @@ html {
 .menu-item {
 	width: 250px;
 	height: 50px;
-	background-color: #54bfc3;
+	background-color: #457b9d;
 	box-shadow: none;
 	border: none;
 	padding: 0;
@@ -187,7 +187,7 @@ html {
 }
 
 .menu-item:active {
-	background-color: #6666FF;
+	background-color: #54bfc3;
 }
 
 .menu-item p {
