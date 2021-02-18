@@ -13,7 +13,8 @@
 	<!-- <div class="container"> -->
 	<div id="wrapper" class="wrapper">
 		<img class="bg img-shape" src="./img/room-1.png" alt="Комната">
-		<img class="color-bg img-shape" src="./img/color-bg.png" alt="Подложка">
+		<img class="color-bg img-shape" src="./img/color-bg1.png" alt="Подложка">
+		<img src="./img/room-1-bw.png" alt="" class="bg-bw img-shape">
 
 		<svg id="color" class="color img-shape" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"
 			xml:space="preserve" style="enable-background:new 0 0 1200 800;">
@@ -40,37 +41,58 @@
 	<!-- </div> -->
 
 	<div class="menu">
-		<button id="color-picker" class="color-button color-picker-box menu-item">
-			<p>Цвет потолка</p>
-		</button>
-		<button id="color-picker-for-wall" class="color-button color-picker-for-wall-box menu-item">
-			<p>Цвет стен</p>
-		</button>
-		<div class="cover-box">
-			<div id="color-picker-for-cover" class="color-button color-picker-for-cover-box menu-item">
-				<p>Цвет ковра</p>
-				<div class="icon-box">
-					<img src="./img/x.svg" alt="" class="x-icon">
-					<img src="./img/checked.svg" alt="" class="checked-icon">
+		<div class="menu-part1">
+			<div id="color-picker" class="color-button color-picker-box">
+				<p>Цвет потолка</p>
+			</div>
+			<div id="color-picker-for-wall" class="color-button color-picker-for-wall">
+				<p>Цвет стен</p>
+			</div>
+			<div class="cover-box color-button">
+				<div id="color-picker-for-cover" class="color-picker-for-cover">
+					<p>Цвет ковра</p>
+				</div>
+				<div id="cover-button" class="menu-item cover-button">
+					<p>Ковер</p>
+					<div class="icon-box">
+						<img src="./img/x.svg" alt="" class="x-icon x-icon1">
+						<img src="./img/checked.svg" alt="" class="checked-icon checked-icon1">
+					</div>
 				</div>
 			</div>
-			<div id="cover-button" class="menu-item cover-button">
-				<p>Ковер</p>
+		</div>
+
+
+		<div class="menu-part2">
+			<div id="light-dots-button" class="menu-item button-for-light light-dots-button">
+				<p>Светильники</p>
+				<div class="icon-box">
+					<img src="./img/x.svg" alt="" class="x-icon x-icon2">
+					<img src="./img/checked.svg" alt="" class="checked-icon checked-icon2">
+				</div>
+			</div>
+			<div id="light-button" class="menu-item button-for-light light-button">
+				<p>Люстра</p>
+				<div class="icon-box">
+					<img src="./img/x.svg" alt="" class="x-icon x-icon3">
+					<img src="./img/checked.svg" alt="" class="checked-icon checked-icon3">
+				</div>
+			</div>
+			<div id="furniture-button" class="menu-item furniture-button">
+				<p>Мебель</p>
+				<div class="icon-box">
+					<img src="./img/x.svg" alt="" class="x-icon x-icon4">
+					<img src="./img/checked.svg" alt="" class="checked-icon checked-icon4">
+				</div>
+			</div>
+			<div id="radio-button" class="menu-item radio-button">
+				<p>Батарея</p>
+				<div class="icon-box">
+					<img src="./img/x.svg" alt="" class="x-icon x-icon5">
+					<img src="./img/checked.svg" alt="" class="checked-icon checked-icon5">
+				</div>
 			</div>
 		</div>
-		<button id="light-dots-button" class="menu-item button-for-light light-dots-button">
-			<p>Светильники</p>
-		</button>
-		<button id="furniture-button" class="menu-item furniture-button">
-			<p>Мебель</p>
-		</button>
-		<button id="light-button" class="menu-item button-for-light light-button">
-			<p>Люстра</p>
-		</button>
-		<button id="radio-button" class="menu-item radio-button">
-			<p>Батарея</p>
-		</button>
-
 	</div>
 
 

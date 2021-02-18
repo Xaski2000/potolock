@@ -54,6 +54,13 @@ html {
 	z-index: 2;
 }
 
+.bg-bw {
+	width: 100%;
+	position: absolute;
+	object-fit: cover;
+	z-index: 3;
+}
+
 .color-bg {
 	width: 100%;
 	position: absolute;
@@ -70,7 +77,7 @@ html {
 }
 
 .color_layer-path {
-	fill: #FFCC66;
+	fill: #fff;
 }
 
 .wall {
@@ -82,7 +89,7 @@ html {
 }
 
 .wall-path {
-	fill: #6666CC;
+	fill: #ffffbf;
 }
 
 .cover {
@@ -90,7 +97,6 @@ html {
 	position: absolute;
 	object-fit: cover;
 	z-index: 4;
-	display: none;
 }
 
 .cover-color {
@@ -99,11 +105,10 @@ html {
 	object-fit: cover;
 	mix-blend-mode: multiply;
 	z-index: 5;
-	display: none;
 }
 
 .cover-color-path {
-	fill: #9999FF;
+	fill: #fff;
 }
 
 .furniture {
@@ -111,7 +116,6 @@ html {
 	position: absolute;
 	object-fit: cover;
 	z-index: 6;
-	display: none;
 }
 
 .light-dots {
@@ -120,7 +124,6 @@ html {
 	object-fit: cover;
 	z-index: 5;
 	margin: 0;
-	display: none;
 }
 
 .light {
@@ -129,7 +132,6 @@ html {
 	object-fit: cover;
 	z-index: 5;
 	margin: 0;
-	display: none;
 }
 
 .radio {
@@ -138,7 +140,6 @@ html {
 	object-fit: cover;
 	z-index: 5;
 	margin: 0;
-	display: none;
 }
 
 .menu {
@@ -147,6 +148,22 @@ html {
 	min-height: 110px;
 	position: relative;
 	margin: 5px auto 0px auto;
+}
+
+.menu-part1 {
+	z-index: 100;
+	max-width: 1050px;
+	min-height: 55px;
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.menu-part2 {
+	z-index: 100;
+	max-width: 1050px;
+	min-height: 55px;
+	position: relative;
 	display: flex;
 	flex-wrap: wrap;
 }
@@ -154,7 +171,7 @@ html {
 .menu-item {
 	width: 250px;
 	height: 50px;
-	background-color: #9999FF;
+	background-color: #54bfc3;
 	box-shadow: none;
 	border: none;
 	padding: 0;
@@ -162,6 +179,7 @@ html {
 	margin: 5px auto;
 	transition: all 0.2s;
 	border-radius: 4px;
+	display: flex;
 }
 
 .menu-item:hover {
@@ -185,8 +203,44 @@ html {
 	user-select: none;
 }
 
+.color-button {
+	width: 32%;
+	min-width: 250px;
+	height: 50px;
+	box-shadow: none;
+	border: none;
+	padding: 0;
+	display: inline-block;
+	margin: 5px auto;
+	transition: all 0.2s;
+	border-radius: 4px;
+	background-color: #fc3645;
+	display: flex;
+}
+
+.color-button:hover {
+	cursor: pointer;
+}
+
+.color-button p {
+	font-family: Roboto, sans-serif;
+	color: black;
+	font-weight: 500;
+	text-align: center;
+	font-size: 16px;
+	margin: auto;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	user-select: none;
+}
+
+.color-button:active {
+	background-color: #c52a37;
+}
+
 .cover-box {
-	width: 250px;
+	min-width: 250px;
 	height: 50px;
 	box-shadow: none;
 	border: none;
@@ -197,12 +251,14 @@ html {
 	border-radius: 4px;
 }
 
-.color-button {
-	background-color: #FFCC44;
+.color-picker-for-cover {
+	display: flex;
+	border-radius: 4px 0px 0px 4px;
+	width: 50%;
 }
 
-.color-button:active {
-	background-color: #fac20a;
+.color-picker-for-cover p {
+	margin: auto;
 }
 
 .cover-button {
@@ -210,22 +266,11 @@ html {
 	margin:0 auto auto 0;
 	border-radius: 0px 4px 4px 0px;
 	display: flex;
-	width: 100px;
+	width: 50%;
 }
 
 .cover-button p {
 	margin: auto;
-}
-
-.color-picker-for-cover-box {
-	display: flex;
-	margin:0 0 auto auto;
-	border-radius: 4px 0px 0px 4px;
-	width: 150px;
-}
-
-.color-picker-for-cover-box p {
-	margin-right: 7px;
 }
 
 .icon-box {
@@ -243,14 +288,25 @@ html {
 	margin: auto auto auto 0px;
 	transition: all 0.3s;
 	position: absolute;
+	opacity: 0;
+	pointer-events: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
 
 .checked-icon {
 	width: 100%;
 	height: 100%;
 	margin: auto auto auto 0px;
-	opacity: 0;
-	fill: #009933;
+	opacity: 1;
+	fill: #333;
 	transition: all 0.3s;
 	position: absolute;
+	pointer-events: none;
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
 }
