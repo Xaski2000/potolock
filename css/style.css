@@ -310,3 +310,133 @@ html {
 	-ms-user-select: none;
 	user-select: none;
 }
+
+@media (max-width: 576px) {
+	.color-button {
+		width: 32%;
+		min-width: 250px;
+		height: 30px;
+		box-shadow: none;
+		border: none;
+		padding: 0;
+		display: inline-block;
+		margin: 2px auto;
+		transition: all 0.2s;
+		border-radius: 4px;
+		background-color: #fc3645;
+		display: flex;
+	}
+
+	.color-button p {
+		font-family: Roboto, sans-serif;
+		color: black;
+		font-weight: 500;
+		text-align: center;
+		font-size: 14px;
+		margin: auto;
+		-moz-user-select: none;
+		-khtml-user-select: none;
+		-webkit-user-select: none;
+		user-select: none;
+	}
+
+	.menu-item {
+		width: 250px;
+		height: 30px;
+		background-color: #457b9d;
+		box-shadow: none;
+		border: none;
+		padding: 0;
+		display: inline-block;
+		margin: 2px auto;
+		transition: all 0.2s;
+		border-radius: 4px;
+		display: flex;
+	}
+
+	.menu-item p {
+		font-family: Roboto, sans-serif;
+		color: black;
+		font-weight: 500;
+		text-align: center;
+		font-size: 14px;
+		margin: auto;
+		-moz-user-select: none;
+		-khtml-user-select: none;
+		-webkit-user-select: none;
+		user-select: none;
+	}
+
+	.cover-button {
+		transition: all 0.3s;
+		margin:0;
+		border-radius: 0px 4px 4px 0px;
+		display: flex;
+		width: 50%;
+	}
+}
+
+@media (max-width: 480px) {
+	.menu {
+		z-index: 100;
+		width: 100%;
+		min-height: 110px;
+		position: relative;
+		margin: 5px auto 0px auto;
+	}
+
+	.menu-part1 {
+		z-index: 100;
+		width: 100%;
+		min-height: 55px;
+		position: relative;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.menu-part2 {
+		z-index: 100;
+		width: 100%;
+		min-height: 55px;
+		position: relative;
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.color-button {
+		width: 80%;
+		min-width: none;
+		height: 30px;
+		box-shadow: none;
+		border: none;
+		padding: 0;
+		display: inline-block;
+		margin: 2px auto;
+		transition: all 0.2s;
+		border-radius: 4px;
+		background-color: #fc3645;
+		display: flex;
+	}
+
+	.menu-item {
+		width: 80%;
+		height: 30px;
+		background-color: #457b9d;
+		box-shadow: none;
+		border: none;
+		padding: 0;
+		display: inline-block;
+		margin: 2px auto;
+		transition: all 0.2s;
+		border-radius: 4px;
+		display: flex;
+	}
+
+	.cover-button {
+		transition: all 0.3s;
+		margin:0;
+		border-radius: 0px 4px 4px 0px;
+		display: flex;
+		width: 50%;
+	}
+}
